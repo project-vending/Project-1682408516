@@ -1,0 +1,13 @@
+
+import csv
+
+# Define the path to the raw data file
+file_path = "WebScraperAnalyzer/data/raw_data.csv"
+
+# Define the headers of the CSV file
+headers = ["data1", "data2", "data3"]
+
+# Create the CSV file and write the headers to it
+with open(file_path, "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(headers)
